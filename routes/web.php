@@ -16,3 +16,6 @@ use App\Http\Controllers\ToDolistController;
 
 Route::get('/',[ToDolistController::class,'index']);
 Route::get('/create',[ToDolistController::class,'create']);
+Route::get('/store_data',[ToDolistController::class,'store']);
+Route::get('/delete/{id}',[ToDolistController::class,'destroy']);
+Route::get('/edit/{id}',[ToDolistController::class,'edit']);
