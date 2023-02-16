@@ -17,7 +17,7 @@ form{
     <div class="container">
        
 
-<form action="edit_data">
+<form action="../update_data/{{$fetch_arr->id}}">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Name</label>
     <input type="text" class="form-control" id="exampleInputname" value="{{$fetch_arr->name}}" name="name" aria-describedby="nameHelp">

@@ -61,9 +61,15 @@ class ToDolistController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, to_dolist $to_dolist)
+    public function update(Request $request, to_dolist $to_dolist,$id)
     {
         //
+        $dd_data = to_dolist::find($id);
+        $dd_data->name = $request->input('name');
+        $dd_data->email = $request->input('email');
+        $dd_data->save();
+        //dd($dd_data);
+       return redirect('/');
     }
 
     /**
