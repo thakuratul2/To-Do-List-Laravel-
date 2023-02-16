@@ -45,7 +45,7 @@ class ToDolistController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(to_dolist $to_dolist): Response
+    public function edit(to_dolist $to_dolist)
     {
         //
     }
@@ -53,7 +53,7 @@ class ToDolistController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, to_dolist $to_dolist): RedirectResponse
+    public function update(Request $request, to_dolist $to_dolist)
     {
         //
     }
@@ -61,7 +61,7 @@ class ToDolistController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(to_dolist $to_dolist): RedirectResponse
+    public function destroy(to_dolist $to_dolist)
     {
         //
     }
